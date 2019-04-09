@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Musicals</title>
+
+<meta name="description" content="HTML tutorial">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="Rui Jesus">
+<meta http-equiv="refresh" content="30">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"  type="text/css"  href="../Marta_Baptista_2016240/Css.css"> 
+</head>
+<!---Content starts here -->
+<body>
+<header>
+<a id="menu_icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="RosyBrown"/>
+        </svg>
+    </a>
+    <div id="drawer">
+	<nav class="col-3">
+<a href="#Rent On Fox"> Rent On Fox</a>
+<br />
+<a href="#Grease"> Grease</a>
+<br />
+<a href="#Images"> Images</a>
+<br />
+<a href="#table"> Table</a>
+</nav>
+</div>
+<h1>Musicals</h1>
+<p> Broadway world </p>
+<h4> BROADWAY </h4>
+<hr>
+</header>
+<nav id="tabletPC" class="col-3">
+    <a href="#Rent On Fox"> Rent On Fox</a>
+    <br>
+    <a href="#Grease"> Grease</a>
+    <br>
+    <a href="#Images"> Images</a>
+    <br>
+    <a href="#table"> Table</a>
+</nav>
+<div id="container" class="col-9">
+<section class="slideshow-container">
+<h2>Slideshow</h2>
+<article class="mySlides" class="fade">
+<figure>
+<img src="https://pbs.twimg.com/media/DUX_1LfVMAA7x9a.jpg">
+<figcaption>RENT</figcaption>
+</figure>
+</article>
+<article class="mySlides" class="fade">
+<figure>
+<img src="https://newcastlelive.com.au/wp-content/uploads/2017/07/19875241_1603375303020608_6202486065549890587_n.jpg">
+<figcaption>RENT</figcaption>
+</figure>
+</article>
+<article class="mySlides" class="fade">
+<figure>
+<img src="https://i2.wp.com/www.silkfred.com/blog/wp-content/uploads/2016/02/grease-sandy-black-outfit2.jpg?fit=798%2C855&ssl=1">
+<figcaption>GREASE</figcaption>
+</figure>
+</article>
+<article class="mySlides" class="fade">
+<figure>
+<img src="https://gl-images.condecdn.net/image/2OeQra7ow4p/crop/405/f/grease_glamour_23sep13_rex.jpg">
+<figcaption>GREASE</figcaption>
+</figure>
+</article>
+<div class="dotpoints">
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+</div>
+</section>
+<section>
+<a name="Rent On Fox">
+<h2> Rent On Fox </h2>
+<i>Songs most recognized</i>
+<ul>
+<li> Seasons of Love, </li>
+<li> La Vie Bohème,</li>
+<li> Finale B,</li>
+<li> Take me or leave me.
+</li>
+</ul>
+</section>
+<section id="csection">
+<a name="Grease">
+<h2> Grease </h2>
+<i> Songs most recognized </i>
+<ol>
+<li><u> You're the one that i want </u></li>
+<li><u> Summer Nights </u></li>
+</ol>
+</section>
+<section>
+<a name="Images">
+<h2>Images</h2>
+<p> about the musicals </p>
+<img src ="https://pbs.twimg.com/media/DUX_1LfVMAA7x9a.jpg" width="560" height="315" "image1" >
+<img src = "https://newcastlelive.com.au/wp-content/uploads/2017/07/19875241_1603375303020608_6202486065549890587_n.jpg" width="560" height="315" "image2">
+<img src = "https://i2.wp.com/www.silkfred.com/blog/wp-content/uploads/2016/02/grease-sandy-black-outfit2.jpg?fit=798%2C855&ssl=1" width="560" height="315" "image3">
+<img src = "https://gl-images.condecdn.net/image/2OeQra7ow4p/crop/405/f/grease_glamour_23sep13_rex.jpg" width="560" height="315" "image4">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UvyHuse6buY?start=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<section>
+<a name="table">
+<table border="1px">
+<th colspan="3"> Rent </th>
+<tr>
+<td> 1994 </td> <td> Character </td> <td> Movies</td>
+</tr>
+<tr>
+<td rowspan="4"> January 25</td>
+<td rowspan="3">Mark Cohen,Roger Davis, Mimi Márquez,Tom Collins,
+Angel Dumott Schunard,Maureen Johnson,Joanne Jefferson and Benjamin Coffin III</td>
+<td> 2005 </td>
+</tr>
+<tr>
+<td> 2014 </td>
+</tr>
+<tr>
+<td> 2019 </td>
+</tr>
+<tr>
+<td>... </td> <td> ... </td>
+</tr>
+</table>
+</section>
+</div>
+<aside class="col-2">
+<h3>Site Oficial</h3>
+<p>Broadway World: https://www.broadwayworld.com</p>
+</aside>
+
+<footer>
+<h2>Developed by Marta Baptista</h2>
+</footer>
+ <script>
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+let i = null;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex> slides.length) {slideIndex = 1}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+ var menu_icon = document.querySelector('#menu_icon');
+    var container = document.querySelector("#container");
+    var drawer = document.querySelector('#drawer');
+
+    menu_icon.addEventListener('click', function (e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+    });
+    container.addEventListener('click', function () {
+        drawer.classList.remove('open');
+    });
+</script>
+</body>
+
+
+<!---Content ends here -->
+</html>
